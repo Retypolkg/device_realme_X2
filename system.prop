@@ -7,3 +7,7 @@ ro.sf.blurs_are_expensive=1
 persist.sys.sf.disable_blurs=1
 debug.sf.latch_unsignaled=1
 debug.sf.disable_backpressure=1
+
+# Gboard
+ro.com.google.ime.kb_pad_port_b=1
+
