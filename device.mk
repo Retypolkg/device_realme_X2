@@ -66,7 +66,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    Snap
+    GCamGo
 
 # Common init scripts
 PRODUCT_PACKAGES += \
