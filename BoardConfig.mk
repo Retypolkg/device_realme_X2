@@ -51,6 +51,8 @@ TARGET_KERNEL_CONFIG := vendor/x2_defconfig
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
+TARGET_KERNEL_ADDITIONAL_FLAGS += \
+    HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Platform
 TARGET_BOARD_PLATFORM := sm6150
