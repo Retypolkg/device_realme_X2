@@ -1190,8 +1190,11 @@
 	 near and far break points. A sensor value less than this is considered "near". -->
     <item name="proximity_sensor_secondary_threshold" translatable="false" format="float"
           type="dimen">4.99</item>
-     
+
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">60</integer>
 	
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">false</bool>
+
 </resources>
