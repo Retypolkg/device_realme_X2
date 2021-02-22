@@ -180,6 +180,8 @@ PRODUCT_PACKAGES += \
     android.hardware.radio@1.4
 
 # Soong namespaces
+PRODUCT_BOARD_PLATFORM := sm6150
+PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/nxp/opensource/sn100x
