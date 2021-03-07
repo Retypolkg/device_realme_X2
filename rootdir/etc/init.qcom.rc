@@ -63,6 +63,8 @@ on property:sys.boot_completed=1
 on property:vold.decrypt=trigger_restart_framework
     restart vendor.audio-hal-2-0
 
+setprop init.svc.console stopped
+
 on post-fs-data
     #Hack until we build the vendor
     mount none /dev/null /vendor/lib/hw/lights.sm6150.so bind
