@@ -88,20 +88,20 @@ void setRMX(const unsigned int variant)
 
     //RMX1991
     prop[0] = {
-        "Pixel 5",
-        "redfin",
+        "RMX1991",
+        "RMX1991CN",
     };
 
     //RMX992
     prop[1] = {
-        "Pixel 5",
-        "redfin",
+        "RMX1992",
+        "RMX1992L1",
     };
 
     //RMX1993
     prop[2] = {
-        "Pixel 5",
-        "redfin",
+        "RMX1993",
+        "RMX1993L1",
     };
 
     const auto set_ro_product_prop = [](const std::string &source,
