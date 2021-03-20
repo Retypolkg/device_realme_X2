@@ -18,12 +18,6 @@
 #include "property_service.h"
 #include "vendor_init.h"
 
-struct x2_props
-{
-    std::string device_build;
-    std::string product_device;
-};
-
 std::vector<std::string> ro_props_default_source_order = {
     "",
     "odm.",
@@ -84,40 +78,6 @@ void load_nfc_props()
 
 void setRMX(const unsigned int variant)
 {
-    x2_props prop[3] = {};
-
-    //RMX1991
-    prop[0] = {
-        "Pixel 5",
-        "redfin",
-    };
-
-    //RMX992
-    prop[1] = {
-        "Pixel 5",
-        "redfin",
-    };
-
-    //RMX1993
-    prop[2] = {
-        "Pixel 5",
-        "redfin",
-    };
-
-    const auto set_ro_product_prop = [](const std::string &source,
-                                        const std::string &prop, const std::string &value) {
-        auto prop_name = "ro.product." + source + prop;
-        property_override(prop_name.c_str(), value.c_str(), false);
-    };
-
-    property_override("ro.build.product", prop[variant].product_device.c_str());
-    for (const auto &source : ro_props_default_source_order)
-    {
-        set_ro_product_prop(source, "device", prop[variant].product_device.c_str());
-        set_ro_product_prop(source, "model", prop[variant].device_build.c_str());
-    }
-
-
     // Load NFC properties only on RMX199{1:3}
     if (variant == 2 || variant == 0)
         load_nfc_props();
