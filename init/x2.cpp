@@ -91,29 +91,26 @@ void setRMX(const unsigned int variant)
 
     //RMX1991
     prop[0] = {
-        "realme/RMX1991/RMX1991CN:10/QKQ1.191201.002/1599815101:user/release-keys",
-        "unknown-user 10 QKQ1.191201.002 eng.root.20201028.204016 release-keys",
+        "google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys",
+        "redfin-user 11 RQ2A.210305.006 7119741 release-keys",
         "RMX1991",
         "RMX1991CN",
-        "2020-10-05",
     };
 
     //RMX992
     prop[1] = {
-        "realme/RMX1992/RMX1992L1:10/QKQ1.191201.002/1597316082:user/release-keys",
-        "unknown-user 10 QKQ1.191201.002 eng.root.20201012.094803 release-keys",
+        "google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys",
+        "redfin-user 11 RQ2A.210305.006 7119741 release-keys",
         "RMX1992",
         "RMX1992L1",
-        "2020-09-05",
     };
 
     //RMX1993
     prop[2] = {
-        "realme/RMX1993EEA/RMX1993L1:10/QKQ1.191201.002/1597316082:user/release-keys",
-        "unknown-user 10 QKQ1.191201.002 eng.root.20201012.094557 release-keys",
+        "google/redfin/redfin:11/RQ2A.210305.006/7119741:user/release-keys",
+        "redfin-user 11 RQ2A.210305.006 7119741 release-keys",
         "RMX1993",
         "RMX1993L1",
-        "2020-09-05",
     };
 
     const auto set_ro_build_prop = [](const std::string &source,
@@ -137,9 +134,6 @@ void setRMX(const unsigned int variant)
         set_ro_product_prop(source, "model", prop[variant].device_build.c_str());
         set_ro_product_prop(source, "name", prop[variant].device_build.c_str());
     }
-
-    // All 3 variants get upadates at different time so let's handle it here.
-    property_override("ro.build.version.security_patch", prop[variant].device_spl.c_str());
 
     // RMX1993 has different ptoduct name due to oversea variants further being divided into spain and europe
     if (variant == 2)
