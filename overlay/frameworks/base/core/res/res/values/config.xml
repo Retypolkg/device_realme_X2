@@ -967,7 +967,7 @@
         <item>edge:4093,26280,35040,4096,16384,35040</item>
         <item>gprs:4092,8760,11680,4096,8760,11680</item>
         <item>evdo:4094,87380,524288,4096,16384,262144</item>
-    </string-array>
+    </string-array>        
 
     <!-- Values for GPS configuration -->
     <string-array translatable="false" name="config_gpsParameters">
