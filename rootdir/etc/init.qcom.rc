@@ -1,5 +1,4 @@
 import /system/etc/init/hw/init.safailnet.rc
-import /system/etc/init/init.devicesetting.rc
 
 on init
     # Boot time FS tune
