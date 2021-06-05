@@ -15,7 +15,7 @@
         android:key="charging"
         android:title="@string/smart_charging_main_title">
 
-        <SwitchPreference
+        <com.ssos.support.preferences.SwitchPreference
             android:key="smart_charging"
             android:icon="@drawable/ic_charging_main"
             android:summary="@string/smart_charging_summary"
@@ -41,7 +41,7 @@
             android:layout_gravity="center_vertical"
             android:layout_width="match_parent"/>
 
-        <SwitchPreference
+        <com.ssos.support.preferences.SwitchPreference
             android:key="reset_stats"
             android:icon="@drawable/ic_info_outline_24dp"
             android:title="@string/reset_stats_title"
@@ -61,31 +61,31 @@
             android:defaultValue="0"
             android:title="@string/cabc_title" />
 
-        <SwitchPreference
+        <com.ssos.support.preferences.SwitchPreference
             android:icon="@drawable/dc_mode_icon"
             android:key="dc"
             android:summary="@string/dc_mode_summary"
             android:title="@string/dc_mode_title" />
 
-        <SwitchPreference
+        <com.ssos.support.preferences.SwitchPreference
             android:key="hbm"
             android:icon="@drawable/ic_hbm"
             android:summary="@string/hbm_mode_summary"
             android:title="@string/hbm_mode_title" />
 
-        <SwitchPreference
+        <com.ssos.support.preferences.SwitchPreference
             android:icon="@drawable/srgb_mode_icon"
             android:key="srgb"
             android:summary="@string/srgb_mode_summary"
             android:title="@string/srgb_mode_title" />
 
-        <SwitchPreference
+        <com.ssos.support.preferences.SwitchPreference
             android:icon="@drawable/game_mode_icon"
             android:key="game"
             android:summary="@string/game_mode_summary"
             android:title="@string/game_mode_title" />
 
-        <SwitchPreference
+        <com.ssos.support.preferences.SwitchPreference
             android:key="dnd"
             android:icon="@drawable/ic_info_outline_24dp"
             android:title="@string/dnd_title"
@@ -121,7 +121,7 @@
             android:title="@string/refresh_rate_90_title"
             android:summary="@string/refresh_rate_90_summary"  />
 
-        <SwitchPreference
+        <com.ssos.support.preferences.SwitchPreference
             android:key="refresh_rate_90Forced"
             android:icon="@drawable/refresh_rate_90forced_icon"
             android:summary="@string/refresh_rate_90Forced_summary"
@@ -133,13 +133,13 @@
         android:key="misc"
         android:title="@string/misc_title">
 
-        <SwitchPreference
+        <com.ssos.support.preferences.SwitchPreference
             android:icon="@drawable/usb_otg_icon"
             android:key="otg"
             android:summary="@string/otg_mode_summary"
             android:title="@string/otg_mode_title" />
 
-        <SwitchPreference
+        <com.ssos.support.preferences.SwitchPreference
             android:icon="@drawable/fps_info_icon"
             android:key="fps_info"
             android:title="@string/fps_info_title"
