@@ -47,6 +47,7 @@
         <permission name="android.permission.REBOOT"/>
         <permission name="android.permission.RECOVERY"/>
         <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.wallpaper">
